@@ -1,0 +1,56 @@
+.Sidebar {
+  color: #626262;
+  padding: 50px;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+  background-color: #000;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.appTitle {
+  color: #fff;
+  margin-bottom: 4rem;
+}
+
+.sidebar_profile .sidebar_name {
+  color: #fff;
+}
+
+.sidebar_profile .sidebar_img {
+  height: 80px;
+  width: 80px;
+  -o-object-fit: cover;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+.links {
+  margin-top: 1.5rem;
+  flex: 1;
+}
+
+.links .link,
+.logout {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  cursor: pointer;
+  margin-bottom: 1rem;
+  transition: color 0.2s;
+  color: #626262;
+}
+
+.links .link:hover,
+.logout:hover {
+  color: #fff;
+}
+
+.link_icon {
+  font-size: 1.2rem;
+  margin-right: 20px;
+}
