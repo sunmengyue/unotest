@@ -1,0 +1,33 @@
+.Navbar {
+  border-bottom: 1px solid #e5e4e2;
+  display: grid;
+  padding: 50px 0px;
+  grid-template-columns: 1.5fr 1fr;
+}
+
+.navbar_icon {
+  font-size: 1.2rem;
+  color: #666666;
+  margin-left: 0.8rem;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.navbar_icon:hover {
+  color: #080808;
+  font-size: 1.3rem;
+}
+
+.navbar_left {
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 3rem;
+}
+
+.navbar_right {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}

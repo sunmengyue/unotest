@@ -1,7 +1,13 @@
 import React from "react";
+import Navbar from "./Navbar";
+import "../style/MainScreen.css";
 
 const MainScreen = () => {
-  return <div>MainScreen</div>;
+  return (
+    <div className="MainScreen">
+      <Navbar />
+    </div>
+  );
 };
 
 export default MainScreen;

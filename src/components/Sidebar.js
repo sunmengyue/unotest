@@ -1,5 +1,5 @@
 import React from "react";
-import "./Sidebar.css";
+import "../style/Sidebar.css";
 import SidebarProfile from "../assets/mark_havelar.jpg";
 import {
   BsHouseDoor,
@@ -24,7 +24,7 @@ const Sidebar = () => {
         <p className="sidebar_title">Graphic Designer</p>
       </div>
       <div className="links">
-        <a className="link" href="#">
+        <a className="link current" href="#">
           <BsHouseDoor className="link_icon" />
           <p>Home</p>
         </a>
