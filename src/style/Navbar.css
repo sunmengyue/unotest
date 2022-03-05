@@ -3,6 +3,7 @@
   display: grid;
   padding: 50px 0px;
   grid-template-columns: 1.5fr 1fr;
+  margin-bottom: 1.5rem;
 }
 
 .navbar_icon {
@@ -11,6 +12,7 @@
   margin-left: 0.8rem;
   cursor: pointer;
   transition: all 0.3s;
+  flex-shrink: 0;
 }
 
 .navbar_icon:hover {

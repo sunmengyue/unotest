@@ -1,0 +1,60 @@
+.dashboard_left .dashboard_left_title {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.dashboard_left {
+  display: flex;
+  flex-direction: column;
+}
+
+.dashboard_left_progress {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.dashboard_left_progress {
+  margin-top: 1.5rem;
+}
+
+.data_name {
+  color: #bdbdbd;
+  font-size: 13px;
+}
+
+.chart_container img {
+  width: 80%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.dashboard_left_bottom {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+}
+.dashboard_left_bottom .performers {
+  display: flex;
+  flex-direction: column;
+}
+
+.dashboard_left_bottom .performers .performer {
+  display: grid;
+  grid-template-columns: 4fr 3fr 1fr;
+  gap: 2rem;
+}
+
+.performer .profile {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 1.5rem;
+}
+
+.profile .profile_photo {
+  width: 40px;
+  height: 40px;
+  -o-object-fit: cover;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-right: 1rem;
+}
