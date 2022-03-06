@@ -1,0 +1,80 @@
+.schedule {
+  display: flex;
+  align-items: flex-start;
+}
+
+.schedule .schedule_time {
+  margin-right: 10px;
+  font-size: 1rem;
+}
+
+.schedule .schedule_plans {
+  padding: 1rem;
+  flex: 1;
+  border-top: 2px dashed rgb(102, 102, 102, 0.3);
+  transform: translate(0px, 10px);
+}
+
+.schedule .schedule_plans .plan {
+  padding: 8px 18px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.3rem;
+  border-radius: 30px;
+}
+
+.plan .planInfo {
+  flex: 1;
+}
+
+.plan .plan_more {
+  color: #c2c0c0;
+}
+
+.planInfo .planInfo_task {
+  font-size: 15px;
+}
+
+.planInfo .planInfo_time {
+  color: #c2c0c0;
+  font-size: 10px;
+}
+
+.planIcon_container {
+  background: black;
+  padding: 8px;
+  margin-right: 1rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.planIcon_container .planIcon {
+  color: #fff;
+  font-size: 1.3rem;
+}
+
+div[id="Meet John"],
+div[id="Schedule for assignments"] {
+  background-color: #fffce4;
+}
+
+div[id="Goes to Caffe Indoran"],
+div[id="Call Dhea for work"] {
+  background-color: #f2ebf7;
+}
+
+div[id="Update task"] {
+  background-color: #ebf3f5;
+}
+
+div[id="Send some work"] {
+  background-color: #fef0ec;
+}
+
+div[id="Meet John"],
+div[id="Send some work"],
+div[id="Update task"] {
+  margin-top: 1.4rem;
+}
