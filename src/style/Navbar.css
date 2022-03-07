@@ -2,7 +2,8 @@
   border-bottom: 1px solid #e5e4e2;
   display: grid;
   padding: 50px 0px;
-  grid-template-columns: 1.5fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
   margin-bottom: 1.5rem;
 }
 

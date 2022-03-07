@@ -1,4 +1,5 @@
 .Dashboard {
   display: grid;
-  grid-template-columns: 3fr 2fr;
+  align-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
 }

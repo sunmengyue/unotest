@@ -20,19 +20,21 @@
 
 .data_name {
   color: #bdbdbd;
-  font-size: 13px;
+  font-size: 12px;
 }
 
 .chart_container img {
-  width: 80%;
+  width: 95%;
+  height: 100%;
   -o-object-fit: cover;
   object-fit: cover;
 }
 
 .dashboard_left_bottom {
-  display: grid;
-  grid-template-columns: 1.5fr 1fr;
+  display: flex;
+  align-items: flex-start;
 }
+
 .dashboard_left_bottom .performers {
   display: flex;
   flex-direction: column;
@@ -41,7 +43,7 @@
 .dashboard_left_bottom .performers .performer {
   display: grid;
   grid-template-columns: 4fr 3fr 1fr;
-  gap: 2rem;
+  gap: 1rem;
 }
 
 .performer .profile {
@@ -58,3 +60,21 @@
   border-radius: 10px;
   margin-right: 1rem;
 }
+
+@media all and (max-width: 1280px) {
+  .dashboard_left_bottom {
+    flex-direction: column;
+  }
+}
+
+@media all and (max-width: 825px) {
+  .dashboard_left_bottom {
+    flex-direction: row;
+  }
+}
+
+@media all and (max-width: 533px) {
+  .dashboard_left_bottom {
+    flex-direction: column;
+  }
+} ;

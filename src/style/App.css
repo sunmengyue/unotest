@@ -20,3 +20,9 @@ a {
   margin-top: 50px;
   display: flex;
 }
+
+@media all and (max-width: 1200px) {
+  .App {
+    max-width: 992px;
+  }
+}

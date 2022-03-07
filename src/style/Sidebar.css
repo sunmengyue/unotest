@@ -1,10 +1,10 @@
 .Sidebar {
   color: #626262;
-  padding: 50px;
+  padding: 40px;
   border-top-right-radius: 30px;
   border-bottom-right-radius: 30px;
-  border-top-left-radius: 25px;
-  border-bottom-left-radius: 25px;
+  border-top-left-radius: 23px;
+  border-bottom-left-radius: 23px;
   background-color: #000;
   text-align: center;
   display: flex;
@@ -21,8 +21,8 @@
 }
 
 .sidebar_profile .sidebar_img {
-  height: 80px;
-  width: 80px;
+  height: 50px;
+  width: 50px;
   -o-object-fit: cover;
   object-fit: cover;
   border-radius: 50%;
@@ -30,7 +30,7 @@
 }
 
 .links {
-  margin-top: 1.5rem;
+  margin-top: 2rem;
   flex: 1;
 }
 
@@ -40,9 +40,12 @@
   justify-content: flex-start;
   align-items: center;
   cursor: pointer;
-  margin-bottom: 1rem;
   transition: color 0.2s;
   color: #626262;
+}
+
+.links .link {
+  margin-bottom: 1.5rem;
 }
 
 .links .link:hover,
@@ -53,4 +56,16 @@
 .link_icon {
   font-size: 1.2rem;
   margin-right: 20px;
+}
+
+/* @media all and (max-width: 1200px) {
+  .links .link {
+    margin-bottom: 0.8rem;
+  }
+} */
+
+@media all and (max-width: 1200px) {
+  .Sidebar {
+    display: none;
+  }
 }

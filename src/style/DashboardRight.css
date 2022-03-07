@@ -78,3 +78,28 @@ div[id="Send some work"],
 div[id="Update task"] {
   margin-top: 1.4rem;
 }
+
+/* @media all and (max-width: 1200px) {
+  div[id="Meet John"],
+  div[id="Send some work"],
+  div[id="Update task"] {
+    margin-top: 0.7rem;
+  }
+
+  .planInfo .planInfo_task {
+    font-size: 13px;
+  }
+
+  .schedule .schedule_time {
+    font-size: 13px;
+  }
+
+  .planIcon_container {
+    padding: 5px;
+    margin-right: 14px;
+  }
+
+  .planIcon_container .planIcon {
+    font-size: 1rem;
+  }
+} */

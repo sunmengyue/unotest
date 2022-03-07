@@ -78,7 +78,7 @@ const DashboardLeft = () => {
           </div>
         </div>
         <div className="bottom_right">
-          <img src={Upgrade} alt="upgrade" />
+          <img src={Upgrade} alt="upgrade" className="upgrade" />
         </div>
       </div>
     </div>
