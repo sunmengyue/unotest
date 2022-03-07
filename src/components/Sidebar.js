@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useContext } from "react";
+import { AppContext } from "../context/AppContext";
 import "../style/Sidebar.css";
 import SidebarProfile from "../assets/mark_havelar.jpg";
 import {
@@ -11,8 +12,9 @@ import {
 } from "react-icons/bs";
 
 const Sidebar = () => {
+  const { sidebarRef } = useContext(AppContext);
   return (
-    <div className="Sidebar">
+    <div className="Sidebar" ref={sidebarRef}>
       <p className="appTitle">SemangQa</p>
       <div className="sidebar_profile">
         <img

@@ -68,4 +68,8 @@
   .Sidebar {
     display: none;
   }
+
+  .showSelf {
+    display: block;
+  }
 }

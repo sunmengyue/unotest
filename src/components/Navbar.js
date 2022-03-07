@@ -1,18 +1,47 @@
-import React from "react";
+import React, { useContext, useState } from "react";
+import { AppContext } from "../context/AppContext";
 import {
   BsSearch,
   BsChevronLeft,
   BsChevronRight,
   BsBell,
-  BsThreeDotsVertical
+  BsThreeDotsVertical,
+  BsFillCaretRightFill,
+  BsFillCaretLeftFill
 } from "react-icons/bs";
 import "../style/Navbar.css";
 
 const Navbar = () => {
+  const [showMenu, setShowMenu] = useState(true);
+  const { sidebarRef } = useContext(AppContext);
+
+  const showSidebar = () => {
+    sidebarRef.current.classList.add("showSelf");
+    setShowMenu(false);
+  };
+
+  const hideSidebar = () => {
+    sidebarRef.current.classList.remove("showSelf");
+    setShowMenu(true);
+  };
+
   return (
     <div className="Navbar">
       <div className="navbar_left">
-        <p>Stats, monthly updates 📈</p>
+        <div>
+          <p>Stats, monthly updates 📈</p>
+          {showMenu ? (
+            <BsFillCaretRightFill
+              className="navbar_icon navbar_expand"
+              onClick={showSidebar}
+            />
+          ) : (
+            <BsFillCaretLeftFill
+              className="navbar_icon navbar_expand"
+              onClick={hideSidebar}
+            />
+          )}
+        </div>
         <BsSearch className="navbar_icon" />
       </div>
       <div className="navbar_right">

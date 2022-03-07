@@ -67,7 +67,7 @@
   }
 }
 
-@media all and (max-width: 825px) {
+@media all and (max-width: 884px) {
   .dashboard_left_bottom {
     flex-direction: row;
   }
