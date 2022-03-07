@@ -73,7 +73,7 @@
   }
 }
 
-@media all and (max-width: 533px) {
+@media all and (max-width: 593px) {
   .dashboard_left_bottom {
     flex-direction: column;
   }
